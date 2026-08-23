@@ -1,16 +1,62 @@
-# React + Vite
+# TripFlow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A simple, responsive trip planning application built as part of my AI Front-End Engineer internship at FlyRank AI.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+TripFlow is a lightweight, one-page trip planning application that helps users organize a trip itinerary and keep track of estimated expenses.
 
-## React Compiler
+The application allows users to create a trip by entering a destination, travel dates, and a budget. They can then organize activities by day, estimate activity costs, manage their itinerary, monitor their total estimated spending, and print the final itinerary.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The project was intentionally kept simple and maintainable, without authentication, a backend, a database, or external APIs.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Create a trip with:
+  - Destination
+  - Start date
+  - End date
+  - Trip budget
+- Automatically generate trip days from the selected date range
+- Add activities to specific trip days
+- Add estimated costs for activities
+- Add optional notes to activities
+- Edit existing activities
+- Delete activities
+- View activities organized by day
+- View estimated cost for each day
+- View total estimated trip cost
+- View remaining budget
+- Clearly indicate whether the trip is within or over budget
+- Form validation and basic edge-case handling
+- Responsive design for desktop and mobile devices
+- Print-friendly itinerary using the browser's native print functionality
+
+## Tech Stack
+
+- React
+- JavaScript
+- Vite
+- HTML
+- CSS
+- Git
+- GitHub
+- Vercel
+- GitHub Copilot
+
+## Project Structure
+
+```text
+tripflow/
+├── public/
+├── src/
+│   ├── components/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── AI-ASSISTANCE.md
+├── PROMPT.md
+├── README.md
+├── package.json
+└── ...
