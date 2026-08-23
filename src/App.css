@@ -1,0 +1,609 @@
+.app-shell {
+  width: min(100%, 980px);
+  margin: 0 auto;
+  padding: 40px 20px 64px;
+}
+
+.app-header {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.app-header-inner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 18px;
+  border: 1px solid #dfe7f1;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.app-logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.95rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.app-header-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.app-header-copy strong {
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  font-size: 1.1rem;
+}
+
+.app-header-copy span {
+  color: #64748b;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #0ea5e9;
+  font-weight: 700;
+}
+
+.app-header h1,
+.form-header h2,
+.summary-header h2,
+.planner-header h2,
+.day-header-row h3,
+.activities-section h3,
+.itinerary-header h2,
+.itinerary-day-header h3 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.app-header h1 {
+  margin-top: 18px;
+  font-size: clamp(2rem, 5vw, 3.1rem);
+  letter-spacing: -0.05em;
+}
+
+.trip-form,
+.trip-summary,
+.planner-panel,
+.itinerary-panel {
+  background: #ffffff;
+  border: 1px solid #dfe7f1;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.05);
+  padding: 24px;
+}
+
+.form-header,
+.summary-header,
+.planner-header,
+.itinerary-header {
+  margin-bottom: 20px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+label {
+  font-size: 0.92rem;
+  color: #334155;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  background: #f8fafc;
+  color: #0f172a;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.12);
+  background: #ffffff;
+}
+
+.primary-button,
+.secondary-button,
+.delete-button {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.primary-button {
+  width: 100%;
+  margin-top: 8px;
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  color: #ffffff;
+  box-shadow: 0 12px 18px rgba(37, 99, 235, 0.18);
+}
+
+.secondary-button {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.delete-button {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.primary-button:hover,
+.secondary-button:hover,
+.delete-button:hover {
+  transform: translateY(-1px);
+}
+
+.primary-button:focus-visible,
+.secondary-button:focus-visible,
+.delete-button:focus-visible,
+.day-tab:focus-visible,
+input:focus-visible {
+  outline: 3px solid rgba(14, 165, 233, 0.18);
+  outline-offset: 2px;
+}
+
+.primary-button:disabled,
+.secondary-button:disabled,
+.delete-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  transform: none;
+}
+
+.form-error {
+  margin: 0 0 14px;
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.summary-item {
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+  font-weight: 700;
+}
+
+.summary-item strong {
+  color: #0f172a;
+  font-size: 1.05rem;
+}
+
+.status-item strong {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.status-badge.within-budget {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-badge.reached-budget {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge.exceeded-budget {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.planner-panel {
+  margin-top: 24px;
+}
+
+.day-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.day-tab {
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #334155;
+  border-radius: 999px;
+  padding: 9px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.day-tab:hover {
+  border-color: #93c5fd;
+}
+
+.day-tab.active {
+  background: #dbeafe;
+  border-color: #93c5fd;
+  color: #1d4ed8;
+  box-shadow: inset 0 0 0 1px rgba(29, 78, 216, 0.12);
+}
+
+.day-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.day-total-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-end;
+}
+
+.day-total-box span {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64748b;
+  font-weight: 700;
+}
+
+.day-total-box strong {
+  color: #0f172a;
+}
+
+.activity-form {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 22px;
+}
+
+.activity-form-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.small-button {
+  width: auto;
+  margin-top: 0;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+}
+
+.activities-section h3 {
+  margin-bottom: 12px;
+}
+
+.empty-state {
+  margin: 0;
+  padding: 18px;
+  text-align: center;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  color: #64748b;
+  background: #f8fafc;
+}
+
+.activity-list {
+  display: grid;
+  gap: 14px;
+}
+
+.activity-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.02);
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.activity-header h4 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1.02rem;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.activity-cost {
+  font-weight: 700;
+  color: #0f172a;
+  white-space: nowrap;
+}
+
+.activity-notes {
+  margin: 0 0 12px;
+  color: #475569;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.activity-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.secondary-reset {
+  margin-top: 22px;
+}
+
+.itinerary-panel {
+  margin-top: 24px;
+  background: #ffffff;
+  border: 1px solid #dfe7f1;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.05);
+  padding: 24px;
+}
+
+.itinerary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.print-button {
+  width: auto;
+  max-width: 220px;
+  margin-top: 0;
+}
+
+.itinerary-days {
+  display: grid;
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.itinerary-day {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #f8fafc 0%, #f8fafc 100%);
+  padding: 18px;
+}
+
+.itinerary-day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.itinerary-day-header h3 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.itinerary-activity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.itinerary-activity-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.itinerary-activity-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.itinerary-activity-main strong {
+  color: #0f172a;
+  word-break: break-word;
+}
+
+.itinerary-notes {
+  margin: 0;
+  color: #475569;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.itinerary-empty {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding: 28px 14px 48px;
+  }
+
+  .app-header-inner {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 14px;
+  }
+
+  .trip-form,
+  .trip-summary,
+  .planner-panel,
+  .itinerary-panel {
+    padding: 18px;
+  }
+
+  .field-row,
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .day-header-row,
+  .activity-header,
+  .activity-actions,
+  .itinerary-header,
+  .itinerary-day-header,
+  .itinerary-activity-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .day-total-box {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .activity-form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .small-button,
+  .secondary-reset,
+  .print-button {
+    width: 100%;
+  }
+}
+
+@media print {
+  @page {
+    margin: 0.5in;
+  }
+
+  body {
+    background: #ffffff;
+  }
+
+  .app-shell {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+
+  .app-header,
+  .trip-form,
+  .planner-panel,
+  .secondary-reset,
+  .no-print,
+  .trip-summary:not(.print-summary),
+  .activity-form,
+  .activity-actions,
+  .delete-button,
+  .primary-button,
+  .secondary-button,
+  .day-tabs {
+    display: none !important;
+  }
+
+  .itinerary-panel {
+    display: block !important;
+    box-shadow: none;
+    border: 1px solid #dfe7f1;
+    padding: 0;
+    margin-top: 0;
+    background: #ffffff;
+  }
+
+  .print-summary {
+    display: block !important;
+    border: 1px solid #e2e8f0;
+    box-shadow: none;
+    margin-bottom: 16px;
+  }
+
+  .itinerary-day {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    background: #ffffff;
+  }
+
+  .itinerary-activity-item {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
