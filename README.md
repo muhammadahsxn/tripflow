@@ -196,13 +196,6 @@ To preview the production build locally:
 
     npm run preview
 
-## Deployment
-
-TripFlow is deployed using Vercel.
-
-**Live Application:**
-
-Add the deployed Vercel URL here after deployment.
 
 ## AI-Assisted Development
 
@@ -245,75 +238,6 @@ AI-generated code was reviewed and tested before being accepted into the applica
 All prompts used during development are documented in [`PROMPT.md`](./PROMPT.md).
 
 A detailed explanation of the AI-assisted workflow and manual improvements is available in [`AI-ASSISTANCE.md`](./AI-ASSISTANCE.md).
-
-## Manual Improvements
-
-AI was used as a development assistant rather than as an autonomous replacement for development.
-
-The application was manually reviewed throughout implementation, including:
-
-* Testing the complete trip creation flow
-* Testing activity creation, editing, and deletion
-* Checking budget calculations
-* Testing invalid inputs and edge cases
-* Reviewing responsive layouts
-* Testing the print experience
-* Reviewing generated code
-* Removing unnecessary complexity
-* Running the production build before deployment
-
-Project scope was deliberately controlled to keep TripFlow focused on the assignment rather than turning it into a full travel platform.
-
-## Design Goal
-
-TripFlow was designed around one simple idea:
-
-**Plan your trip without the overhead.**
-
-The interface focuses on:
-
-* Clear information hierarchy
-* Simple trip setup
-* Easy activity management
-* Day-by-day organization
-* Immediate budget feedback
-* Responsive usability
-* Minimal visual clutter
-
-The goal was to create a small application that feels like a useful product rather than simply demonstrating React forms.
-
-## Roadmap
-
-Future development could include:
-
-* [ ] Local storage persistence
-* [ ] Weather information
-* [ ] Map integration
-* [ ] Destination recommendations
-* [ ] Activity recommendations
-* [ ] Drag-and-drop itinerary planning
-* [ ] PDF itinerary export
-* [ ] Trip sharing
-* [ ] User accounts and cloud storage
-
-These features are intentionally outside the scope of the current assignment.
-
-## Project Status
-
-**Completed MVP**
-
-The current version includes:
-
-* Trip creation
-* Automatic day generation
-* Activity management
-* Day-by-day itinerary
-* Budget tracking
-* Validation
-* Responsive UI
-* Print functionality
-* Production build
-* Vercel deployment
 
 ## Internship Context
 
